@@ -2,6 +2,7 @@ const loadConfig = require('@instructure/config-loader')
 
 module.exports = function babel(api) {
   const isProduction = api.env('production')
+  /*
   const presets = [
     '@babel/preset-typescript',
     [ '@babel/preset-env', {
@@ -21,8 +22,10 @@ module.exports = function babel(api) {
     } ],
     [ '@babel/preset-react', { useBuiltIns: true } ]
   ]
-  //const presets = [ require('@instructure/ui-babel-preset') ]
+  */
+  const presets = [ require('@instructure/ui-babel-preset') ]
   const plugins = []
+  /*
   plugins.push([
     require('@instructure/babel-plugin-transform-imports'),
     {
@@ -80,6 +83,7 @@ module.exports = function babel(api) {
     require('@babel/plugin-syntax-dynamic-import').default,
     require('babel-plugin-transform-undefined-to-void')
   )
+  */
 
   if (!isProduction) {
     plugins.push('react-refresh/babel')
