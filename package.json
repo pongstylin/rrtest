@@ -1,0 +1,35 @@
+{
+  "name": "rrtest",
+  "version": "1.0.0",
+  "description": "Testing React Refresh",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development webpack serve --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@instructure/ui-webpack-config": "^8.4.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@instructure/ui-babel-preset": "^8.4.0",
+    "@instructure/ui-eslint-config": "^8.4.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "eslint": "^5.0.0",
+    "eslint-loader": "^3.0.0",
+    "html-webpack-plugin": "^4",
+    "react-refresh": "^0.9",
+    "terser-webpack-plugin": "^4",
+    "webpack": "^4",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
